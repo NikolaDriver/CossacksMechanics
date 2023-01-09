@@ -46,7 +46,11 @@ h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight: 400;}
 
 .fullscreen {
     min-height: 100vh;
-    background: url('../img/hero-background.jpg') center / cover no-repeat;
+    
+    background: linear-gradient(
+       rgba(9, 9, 9, 0.579),
+       rgba(50, 51, 69, 0.748)),
+    url(../img/hero-background.jpg) center / cover no-repeat;
     display: flex;
     padding: 20px 0;
 }
@@ -62,25 +66,41 @@ h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight: 400;}
     padding: 0 20px;
 }
 .fullscreen__title {
-    font-size: 50px;
-    margin: 0px 0px 20px 0px;
+    color: rgb(31, 137, 250);
+    font-size: 70px;
+    margin: 0px 0px 60px 0px;
 }
 .fullscreen__text {
+    color: rgb(251, 255, 0);
     font-size: 25px;
     margin: 0px 0px 20px 0px;
 }
 .fullscreen__link {
     display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
     line-height: 50px;
     text-transform: uppercase;
-    color: #fff;
+    color: rgb(232, 232, 9);
     letter-spacing: 2px;
-    background-color: rgb(108, 104, 214);
+    background-color: rgb(31, 137, 250);
+    border-radius: 5px;
     align-self: center;
-    padding: 0 20px;
+    padding: 0 10px;
+    margin-top: 40px;
 } 
+
+.fullscreen__link:hover {
+    color: rgb(215, 94, 94);
+    background: aqua;
+    b
+}
+
 .fullscreen__two {
-    background: url('../img/background2.jpg') center / cover no-repeat fixed;   
+    background: linear-gradient(
+        rgba(9, 9, 9, 0.579),
+        rgba(50, 51, 69, 0.748)),
+     url(../img/background2.jpg) center / cover no-repeat;   
 }
 
 .content__body {
